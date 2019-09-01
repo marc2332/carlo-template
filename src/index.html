@@ -12,7 +12,11 @@
     <script type="text/javascript" >
 
       readFile('readme.md').then((data) => {
-        document.getElementById('file_content').textContent = data;
+          document.getElementById('file_content').textContent = data;
+          return;
+      }).catch((err)=>{
+          if(err) document.getElementById('file_content').textContent = 'No readme.md detected on the current directory.';
+          return;
       })
 
     </script>
