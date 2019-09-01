@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+  <head>
+     <meta charset="utf-8" />
+     <title>CarloJS template</title>
+     <link rel='shortcut icon' type='image/x-icon' href="favicon.ico">
+     <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <h2 class=title> CarloJS template </h2>
+    <textarea id=file_content></textarea>
+    <script type="text/javascript" >
+
+      readFile('readme.md').then((data) => {
+        document.getElementById('file_content').textContent = data;
+      })
+
+    </script>
+  </body>
+</html>

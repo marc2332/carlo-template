@@ -1,0 +1,13 @@
+{
+  "name": "carlo-template",
+  "version": "1.0.0",
+  "description": "A CarloJS template app.",
+  "author":"Marc Espin",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "carlo": "^0.9.46"
+  }
+}
